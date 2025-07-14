@@ -1,27 +1,14 @@
-import "./components/Header/Headers";
-import { Layout } from "antd";
-import { Proverka } from "./components/Header/Headers";
-
-const contentStyle = {
-  textAlign: "center",
-  minHeight: 120,
-  lineHeight: "200px",
-  color: "#fff",
-  backgroundColor: "#0958d9",
-};
-const layoutStyle = {
-  borderRadius: 8,
-  overflow: "hidden",
-  width: "calc(50% - 8px)",
-  maxWidth: "calc(50% - 8px)",
-};
+import { Headers } from "./components/Header/Headers";
+import { Main } from "./pages/main/Main";
 
 function App() {
   return (
-    <Layout style={layoutStyle}>
-      <Proverka />
-      <Content style={contentStyle}>Content</Content>
-    </Layout>
+    <div>
+      <Headers />
+      <div className="container">
+        <Main />
+      </div>
+    </div>
   );
 }
 
